@@ -6,7 +6,7 @@
     --ColorCyan: hsl(178, 100%, 50%);
     --mainBGVerydarkblue: hsl(217, 54%, 11%);
     --cardBGVerydarkblue: hsl(216, 50%, 16%);
-    --lineVerydarkblue: hsl(215, 32%, 27%);
+    --lineVerydarkblue: hsl(216, 14%, 58%);
     --White: hsl(0, 0%, 100%);
     --FontePrimary: 'Outfit', sans-serif;
 }
@@ -58,6 +58,9 @@ body{
     border-radius: 10px;
 }
 
+
+/*problema para add */
+
 .info-card{
     display: flex;
     flex-direction: column;
@@ -66,10 +69,49 @@ body{
     height: 50%;
 }
 
+.info-card h1:hover{
+    color: var(--ColorCyan);
+    cursor: pointer;
+}
+
 .info-card p{
     color: var(--lineVerydarkblue);
+}
+
+.info-status{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.info-status #value{
+    color: var(--ColorCyan);
+
+}  
+
+.info-status #date {
+    color: var(--lineVerydarkblue);
+}
+
+.info-status #date i {
+    color: var(--lineVerydarkblue);
+    margin-right: 5px;
+}
+
+.creator{
+    display: flex;
+}
+
+.creator img{
+    width: 25px;
+    margin-right: 1rem;
+}
+
+.creator span:hover{
+    color: var(--ColorCyan);
+    cursor: pointer;
 }
 
 .attribution{
     display: none;
 }
+
