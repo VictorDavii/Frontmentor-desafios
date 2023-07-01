@@ -1,0 +1,82 @@
+:root{
+    --frontPrimary:'Hanken Grotesk';
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+    --Lightslateblue (background): hsl(252, 100%, 67%);
+    --Lightroyalblue (background): hsl(241, 81%, 54%);
+    --Violetblue: hsla(256, 72%, 46%, 1);
+    --Persianblue: hsla(241, 72%, 46%, 0);
+
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--frontPrimary);  
+}
+
+main{
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 40rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.result{
+    text-align: center;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 4rem;
+    background-color: var(--Violetblue);
+    border-radius: 1rem;
+    color: #fff;
+}
+.result h1{
+    font-size: 1rem;
+    color: #cec4c4;
+    margin-bottom: 1rem;
+}
+.round-number span{
+    font-size: 3.5rem;
+    font-weight: bold;
+    font-family: var(--frontPrimary);
+    padding: 3rem;
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.card-info p{
+    width: 70%;
+    margin: 0 auto;
+}
+.summary{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3rem;
+    background-color: var(--Violetblue);
+    border-radius: 1rem;
+}
