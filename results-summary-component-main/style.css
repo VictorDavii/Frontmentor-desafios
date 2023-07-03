@@ -4,11 +4,10 @@
     --Orangeyyellow: hsl(39, 100%, 56%);
     --Greenteal: hsl(166, 100%, 37%);
     --Cobaltblue: hsl(234, 85%, 45%);
-    --Lightslateblue (background): hsl(252, 100%, 67%);
-    --Lightroyalblue (background): hsl(241, 81%, 54%);
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue:: hsl(241, 81%, 54%);
     --Violetblue: hsla(256, 72%, 46%, 1);
-    --Persianblue: hsla(241, 72%, 46%, 0);
-
+    --Persianblue: rgb(36, 36, 116);
 }
 *{
     margin: 0%;
@@ -41,24 +40,25 @@ main{
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    row-gap: 4rem;
-    background-color: var(--Violetblue);
-    border-radius: 1rem;
+    justify-content: space-around;
+    background: #2F7336;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, var(--Lightroyalblue), var(--Violetblue));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, var(--Lightslateblue), var(--Violetblue)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 2rem;
     color: #fff;
 }
 .result h1{
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #cec4c4;
-    margin-bottom: 1rem;
+}
+.round-number{
+    padding: 1rem 0;
+    /*limitar o largura da div para ficar na mesma altura*/
 }
 .round-number span{
-    font-size: 3.5rem;
-    font-weight: bold;
-    font-family: var(--frontPrimary);
-    padding: 3rem;
-    border-radius: 50%;
-    box-shadow: 2px 2px 1px;
+    font-size: 3.5rem; 
+         
 }
 .card-info{
     display: flex;
@@ -66,17 +66,47 @@ main{
     justify-content: center;
     gap: 1rem;
 }
+.card-info h2{
+    letter-spacing: 2px;
+}
 .card-info p{
     width: 70%;
     margin: 0 auto;
+    color: #cec4c4;
 }
 .summary{
     height: 100%;
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    row-gap: 3rem;
-    background-color: var(--Violetblue);
-    border-radius: 1rem;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 2rem;
+    border-bottom-left-radius: 0%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.445);
+    padding: 1rem 1rem;
+}
+.summary span{
+    font-weight: bold;
+}
+.summary li{
+    padding: 1rem 0;
+    background-color: cadetblue;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.summary li .left-block{
+    display: flex;
+    gap: 5px;
+}
+.summary button{
+    padding: 1rem;
+    border-radius: 2rem;
+    border-style: none;
+    background-color: var(--Persianblue);
+    color: #fff;
 }
